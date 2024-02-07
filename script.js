@@ -87,7 +87,6 @@ function pic1no(){
 }
 
 const pic1NoAsync = async (x) => {
-    changeText("Selbst Mario fällt für die Liebe.");
     await sleep(sleepTime*40);
     changePic("couldbeus.jpeg");
 };
