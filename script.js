@@ -23,18 +23,13 @@ const szenarios = [
     },
     {
         name: "Zweites Nein",
-        "button functions":[picBurg,picBurg],
+        "button functions":[happyEnding, pic1no],
         text: "Wusstest du das Waffeln eigentlich Pancakes mit Bauchmuskeln sind?"
-    },
-    {
-        name: "Drittes Nein",
-        "button functions": [happyEnding, pic1no],
-        text: "Sicher du möchtest nicht die Prinzessin zu meinem Schloss sein?"
     },
     {
         name: "Viertes Nein",
         "button functions":[happyEnding,oderFrage],
-        text: "Überlegs dir gut!🤔"
+        text: "Hat sich dein Herz umentschieden?"
     },
     {
         name: "Fünftes Nein",
@@ -49,7 +44,7 @@ const szenarios = [
     {
         name: "Siebtes Nein",
         "button functions":[happyEnding,sadEnding],
-        text: "Letzte Chance!Hat sich dein Herz umentschieden?"
+        text: "Letzte Chance!Überlegs dir gut!🤔"
     }
 ];
 
