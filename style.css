@@ -26,7 +26,7 @@ button {
 }
 
 #image img {
-    max-width: 40%; /* Responsives Design mit 50% Breite */
+    max-width: 45%; /* Responsives Design mit 50% Breite */
     height: auto; /* Beibehaltung des Seitenverhältnisses */
 }
 .popups-container {
