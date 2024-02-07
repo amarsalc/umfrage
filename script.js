@@ -72,7 +72,7 @@ function picEnte() {
 }
 
 function picGift() {
-    count=6;
+    count=5;
     changeTextButton2.innerText = "Ja";
     fakeButton2.innerText = "Nein";
     changePic("gift.jpeg");
@@ -83,13 +83,8 @@ function picBurg() {
 }
 
 function pic1no(){
-    pic1NoAsync();
-}
-
-const pic1NoAsync = async (x) => {
-    await sleep(sleepTime*40);
     changePic("couldbeus.jpeg");
-};
+}
 
 function changePic(x) {
         update();
