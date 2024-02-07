@@ -1,0 +1,151 @@
+@import url('https://fonts.googleapis.com/css2?family=Bungee+Spice&family=Handjet&family=Honk&family=Nabla&family=Roboto:ital,wght@0,300;0,400;0,900;1,400&display=swap');
+
+* {
+    box-sizing:border-box;
+  }
+
+.button-container {
+    margin-top: -2%;
+    text-align: center;
+}
+
+button {
+    padding: 2px 5px;
+    font-size: 1rem;
+    margin: 30px;
+    line-height: 1;
+    width: 100px;
+    height: 40px;
+    display: inline-block; /* Stellt sicher, dass die Buttons nebeneinander angezeigt werden */
+}
+
+#image {
+    text-align: center; /* Zentriert den Inhalt des <figure> Elements */
+    display: none;
+    margin-top: 20px;
+}
+
+#image img {
+    max-width: 40%; /* Responsives Design mit 50% Breite */
+    height: auto; /* Beibehaltung des Seitenverhältnisses */
+}
+.popups-container {
+    display: block;
+    text-align: center;
+    margin-top: 40px;
+    font-size: 32px;
+}
+
+#typeWriter{
+    font-family: 'Bungee Spice', sans-serif;
+    font-size: 30px;
+    color: black;
+    text-shadow: -1px -1px 0 black,
+    1px -1px 0 black,
+    -1px 1px 0 black,
+    1px 1px 0 black;
+}
+#cursor{
+    /* font-family: 'Nabla', system-ui; */
+    font-family: 'Bungee Spice', sans-serif;
+    font-size: 46px;
+    color: black;
+    text-shadow: -2px -2px 0 black,
+    2px -2px 0 black,
+    -2px 2px 0 black,
+    2px 2px 0 black;
+    margin-top: 5%;
+    color: white;
+    animation: blink 1s linear infinite;
+}
+#cursor2{
+    display: none;
+    font-size: 36px;
+    margin-top: 5%;
+    color: white;
+    animation: blink 1s linear infinite;
+}
+
+@keyframes blink {
+    0% {
+        opacity: 100%;
+    }
+    50%{
+        opacity: 0%;
+    }
+}
+:root
+{
+    --x:45deg;
+}
+a{
+    position: relative;
+    padding: 2px 5px;
+    margin: 30px;
+    width: 150px;
+    height: 55px;
+    display: inline-block;
+    border-radius: 5px;
+}
+a i{
+    position: absolute;
+    inset: -2px;
+    display: block;
+    border-radius: 5px;
+}
+a i,
+a i:nth-child(2)
+{
+    background: linear-gradient(var(--x),#00ccff,#0e1538,#0e1538,#d400d4);
+}
+a i:nth-child(2){
+    filter: blur(10px);
+}
+a span{
+    font-family:'Roboto', sans-serif;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    letter-spacing: 2px;
+    border: 1px solid #040a29;
+    border-radius: 3px;
+    background: rgba(14, 21, 56,0.65);
+}
+a span::before
+{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -50;
+    width: 100%;
+    height: 100%;
+    background: rgba(255,255,255,0.075);
+    transform: skew(25deg);
+}
+
+html {
+    height: 100%; /* Stellt sicher, dass der gesamte Bildschirm abgedeckt ist */
+    margin: 0; /* Entfernt Standard-Margins */
+    padding: 0; /* Entfernt Standard-Paddings */
+    background-image: url('retro.jpeg');
+    background-size: cover;
+     /* Zentriert das Bild */
+    background-repeat: no-repeat;
+}
+
+#questionText {
+    font-family: 'Bungee Spice', sans-serif;
+    font-size: 46px;
+    color: black;
+    text-shadow: -2px -2px 0 black,
+    2px -2px 0 black,
+    -2px 2px 0 black,
+    2px 2px 0 black;
+    margin-top: 5%;
+}
