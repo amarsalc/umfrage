@@ -23,7 +23,7 @@ const szenarios = [
     },
     {
         name: "Zweites Nein",
-        "button functions":[happyEnding, pic1no],
+        "button functions":[pic1no, pic1no],
         text: "Wusstest du das Waffeln eigentlich Pancakes mit Bauchmuskeln sind?"
     },
     {
